@@ -1,0 +1,14 @@
+-var pageTitle='HomePage';
+<!DOCTYPE html>
+html
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible' content='IE=edge')
+    titlePage Title
+    meta(name='viewport' content='width=device-width, initial-scale=1')
+    include pug/layout/styles
+  body
+    .page.home-page
+      include pug/layout/sidebar
+      .content-area
+        h1 #{pageTitle} 
