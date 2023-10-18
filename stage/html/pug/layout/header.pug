@@ -22,6 +22,37 @@
                         | You Got Email From hello hello 
             .noti-foot.text-center: a(href="#") View All Notifications
     i.fa-solid.fa-up-right-and-down-left-from-center.toggle-fullscreen.header-icon 
+    .dropdown.userMenu-container
+        .username#userMenu(data-toggle='dropdown' aria-haspopup="true" aria-expanded="false") 
+            img.avatar.rounded-circle(src="imgs/avatar.png" alt="User Avatar")
+            span.user alilo Alaeddine 
+            i.fa.fa-angle-down.fa-lg 
+        .dropdown-menu(aria-labelledby="userMenu")
+            .user-info
+                h3 alilo Alaeddine 
+                p premium Member
+            hr
+            ul.activities-list.list-unstyled 
+                li Added Comment On Post "How To Make website "
+                li created Post On Category "Science"
+                li Created Chart On Charts Page 
+                li Added Comment On Post "How To Make Cv"
+            hr
+            .row.userMenu-links 
+                .col 
+                    .link-box 
+                        i.fa.fa-gear.fa-lg.fa-fw 
+                        span Settings
+                .col 
+                    .link-box 
+                        i.fa.fa-user.fa-lg.fa-fw 
+                        span My Profile
+                .col 
+                    .link-box 
+                        i.fa.fa-power-off.fa-lg.fa-fw 
+                        span Logout
+
+
 
 
 
