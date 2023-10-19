@@ -11,22 +11,23 @@ $(function () {
     $(this).find(".fa-angle-right").toggleClass("down");
     $(this).next(".child-links").slideToggle();
   });
-});
 
-//Open / Close FullScreen
-$(".toggle-fullscreen").on("click", function () {
-  $(this).toggleClass("full-screen");
-  if ($(this).hasClass("full-screen")) {
-    openFullscreen();
-  } else {
-    closeFullscreen();
-  }
-
+  //Open / Close FullScreen
+  $(".toggle-fullscreen").on("click", function () {
+    $(this).toggleClass("full-screen");
+    if ($(this).hasClass("full-screen")) {
+      openFullscreen();
+    } else {
+      closeFullscreen();
+    }
+  });
   //Toggle Settings
   $(".toggle-settings").on("click", function () {
     $(this).find("i").toggleClass("fa-spin");
     $(this).parent().toggleClass("hide-settings");
   });
+
+  //
 });
 
 var elem = document.documentElement;

@@ -1,4 +1,6 @@
-@import "sass/variables/colors";
+@import "sass/options/colors.scss";
 @import "sass/layout/_global.scss";
 @import "sass/layout/_sidebar.scss";
 @import "sass/layout/header.scss";
+
+@import "sass/components/settings-box.scss";
