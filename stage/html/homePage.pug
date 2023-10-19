@@ -6,11 +6,11 @@ html(lang="en")
     include pug/layout/styles
   body
     .page.home-page
+      include pug/components/settings-box
       include pug/layout/sidebar
       .content-area
         include pug/layout/header
         .container-fluid 
-          .content 
-            h1.page-title #{pageTitle}
-            p.page-description This is Description of #{pageTitle}
+          .content
+            include pug/components/page-head.pug
     include pug/layout/scripts

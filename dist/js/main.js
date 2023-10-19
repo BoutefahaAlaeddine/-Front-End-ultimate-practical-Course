@@ -21,6 +21,12 @@ $(".toggle-fullscreen").on("click", function () {
   } else {
     closeFullscreen();
   }
+
+  //Toggle Settings
+  $(".toggle-settings").on("click", function () {
+    $(this).find("i").toggleClass("fa-spin");
+    $(this).parent().toggleClass("hide-settings");
+  });
 });
 
 var elem = document.documentElement;
