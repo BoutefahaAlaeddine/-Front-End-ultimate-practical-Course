@@ -27,6 +27,18 @@ $(function () {
     $(this).parent().toggleClass("hide-settings");
   });
 
+  //switch Colors Theme
+  var themesClasses = [];
+  $(".color-options li").each(function () {
+    themesClasses.push($(this).data("theme"));
+  });
+  $(".color-options li").on("click", function () {
+    $(this).addClass("active").siblings().removeClass("active");
+    console.log(themesClasses.join(" "));
+    $("body")
+      .removeClass(themesClasses.join(" "))
+      .addClass($(this).data("theme"));
+  });
   //
 });
 

@@ -1,14 +1,17 @@
 .settings-box.hide-settings 
     .toggle-settings 
         i.fa.fa-gear.fa-lg 
-    .setting-content 
+    .setting-content.text-center 
         .option-box.color-options 
-            h3 Color Options
+            h3.option-title Color Options
             - var themes=["green-theme","blue-theme","red-theme","orange-theme","purple-theme"]
             ul.list-unstyled 
-                each theme in themes 
-                    li(data-theme=theme)
+                each theme in themes
+                    if(theme=="green-theme") 
+                        li(class="active" data-theme=theme)
+                    else 
+                        li(data-theme=theme)
         .option-box 
-            h3 Font Options
+            h3.option-title Font Options
         .option-box 
-            h3 Sidebar Options
+            h3.option-title Sidebar Options
