@@ -2,8 +2,12 @@
     .toggle-settings 
         i.fa.fa-gear.fa-lg 
     .setting-content 
-        .option-box 
+        .option-box.color-options 
             h3 Color Options
+            - var themes=["green-theme","blue-theme","red-theme","orange-theme","purple-theme"]
+            ul.list-unstyled 
+                each theme in themes 
+                    li(data-theme=theme)
         .option-box 
             h3 Font Options
         .option-box 

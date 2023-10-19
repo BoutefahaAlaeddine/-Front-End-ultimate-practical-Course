@@ -11,6 +11,9 @@ $themes: (
   orange-theme: (
     color: #d35400,
   ),
+  purple-theme: (
+    color: #8e44ad,
+  ),
 );
 
 @each $theme, $map in $themes {
