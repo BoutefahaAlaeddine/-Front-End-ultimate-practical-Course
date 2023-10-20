@@ -3,6 +3,18 @@
 }
 body {
   font-family: "Open Sans", sans-serif;
+  &.open {
+    font-family: "Open Sans", sans-serif;
+  }
+  &.roboto {
+    font-family: "Roboto", sans-serif;
+  }
+  &.merriweather {
+    font-family: "Merriweather", serif;
+  }
+  &.alumni {
+    font-family: "Alumni Sans Collegiate One", sans-serif;
+  }
 }
 .page {
   min-height: 100vh;

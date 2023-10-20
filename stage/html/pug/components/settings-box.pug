@@ -11,7 +11,11 @@
                         li(class="active" data-theme=theme)
                     else 
                         li(data-theme=theme)
-        .option-box 
+        .option-box.font-options
             h3.option-title Font Options
+                - var fonts=["open","roboto","merriweather","alumni"]
+            select.form-control
+                each font in fonts
+                    option(value=font)=font +" font"
         .option-box 
             h3.option-title Sidebar Options
